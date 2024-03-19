@@ -4,16 +4,16 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  ServiceConnectionName: "ALZPipelineConnection"
+  ServiceConnectionName: "Azure Devops - MPN"
   ManagementGroupPrefix: "alz"
   TopLevelManagementGroupDisplayName: "Azure Landing Zones"
-  Location: "eastus"
-  LoggingSubId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  Location: "westeurope"
+  LoggingSubId: "2b240afd-7250-4208-847c-def07038c95a"
   LoggingResourceGroupName: "alz-logging"
-  HubNetworkSubId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  HubNetworkSubId: "2b240afd-7250-4208-847c-def07038c95a"
   HubNetworkResourceGroupName: "Hub_Networking_POC"
   RoleAssignmentManagementGroupId: "alz-platform"
-  SpokeNetworkSubId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  SpokeNetworkSubId: "2b240afd-7250-4208-847c-def07038c95a"
   SpokeNetworkResourceGroupName: "Spoke_Networking_POC"
   RunNumber: $(Build.BuildNumber)
 
